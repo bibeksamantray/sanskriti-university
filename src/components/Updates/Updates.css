@@ -1,0 +1,295 @@
+.updates {
+  background: #f5f7fb;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 0;
+}
+
+.updates__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 64px 72px 16px;
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  column-gap: 80px;
+}
+
+.updates__timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.updates__bell {
+  width: 36px;
+  height: 36px;
+  background: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.updates__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.updates__subtitle {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* ── Timeline list wrapper ── */
+.updates__list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+/* Vertical connecting line */
+.updates__line {
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: #dbe2ea;
+  z-index: 0;
+}
+
+/* Each row */
+.updates__item {
+  position: relative;
+  padding: 0 0 26px 26px;
+  margin: 0;
+  display: block;        /* block so children stack vertically */
+}
+
+.updates__item:last-child {
+  padding-bottom: 0;
+}
+
+/* Dot */
+.updates__dot {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f5f7fb;
+  border: 2px solid;
+  z-index: 1;
+}
+
+.updates__dot--red  { border-color: #ef4444; }
+.updates__dot--blue { border-color: #3b82f6; }
+
+/* ── Date + NEW pill — on ONE line ── */
+.updates__date-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;   /* date and pill sit side-by-side */
+  gap: 6px;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.updates__date {
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  color: #9aa3af;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.updates__pill {
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+/* ── Headline — below date row ── */
+.updates__headline {
+  display: block;        /* forces it onto its own line */
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.4;
+  margin: 0 0 6px 0;
+}
+
+/* ── Tag chip — below headline ── */
+.updates__tag {
+  display: inline-block; /* sits on its own line, sized to content */
+  font-size: 11px;
+  color: #6b7280;
+  background: #eef0f7;
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-weight: 500;
+}
+
+/* =============================================
+   RIGHT — Stats
+   ============================================= */
+
+.updates__why {
+  font-size: 11px;
+  font-weight: 700;
+  color: #f59e0b;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+.updates__heading {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #0f172a;
+}
+
+.updates__highlight {
+  color: #2563eb;
+}
+
+.updates__copy {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 18px 0 34px;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+.updates__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 20px;
+}
+
+.updates__card {
+  border-radius: 14px;
+  padding: 22px 20px;
+}
+
+.updates__card--blue   { background: #e7efff; }
+.updates__card--yellow { background: #fff4d6; }
+.updates__card--purple { background: #f2eaff; }
+.updates__card--green  { background: #e6f7ef; }
+
+.updates__card-value {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.updates__card--blue   .updates__card-value { color: #2563eb; }
+.updates__card--yellow .updates__card-value { color: #f59e0b; }
+.updates__card--purple .updates__card-value { color: #7c3aed; }
+.updates__card--green  .updates__card-value { color: #059669; }
+
+.updates__card-label {
+  font-size: 12px;
+  color: #374151;
+  font-weight: 600;
+}
+
+/* =============================================
+   RECRUITERS bar
+   ============================================= */
+
+.recruiters {
+  margin-top: 8px;
+  background: linear-gradient(90deg, #1f42b0 0%, #1b3596 100%);
+  color: #fff;
+  padding: 10px 0 12px;
+  border: none;
+  box-shadow: none;
+  user-select: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.recruiters__title {
+  max-width: 1180px;
+  margin: 0 auto 14px;
+  padding: 0 32px;
+  font-weight: 700;
+  font-size: 1rem;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.recruiters__title::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, #3b62d6 0%, #2545a4 100%);
+  opacity: 0.9;
+  border-radius: 999px;
+}
+
+.recruiters__list {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #a2a6c9;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 0;
+  box-shadow: none;
+}
+
+.recruiters__item {
+  display: inline-flex;
+  cursor: default;
+  opacity: 0.95;
+  user-select: none;
+  white-space: nowrap;
+  padding: 0 3px;
+  border-radius: 4px;
+}
+
+.recruiters__item:focus-visible {
+  outline: none;
+}
+
+/* =============================================
+   Responsive
+   ============================================= */
+
+@media (max-width: 1024px) {
+  .updates__inner {
+    grid-template-columns: 1fr;
+  }
+  .updates__cards {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 640px) {
+  .updates__inner,
+  .recruiters__title,
+  .recruiters__list {
+    padding: 0 18px;
+  }
+  .updates__inner {
+    padding-top: 36px;
+  }
+}
